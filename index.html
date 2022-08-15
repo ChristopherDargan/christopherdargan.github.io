@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/imageNavigation.css">
+		<link rel="stylesheet" href="assets/css/slideShow.css">
 	</head>
 	<body class="is-preload">
 
@@ -140,46 +142,234 @@
 
 				<!-- Applications-->
 					<section id="applications" class="two">
-						<div class="container">
+					<!-- <div class="container"> -->	
 							<header>
 								<h2>Software Applications</h2>
 							</header>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/GraphReachabilityApp02.JPG" alt="" /></a>
-										<header>
-											<h3>Graph Reachability</h3>
-										</header>
-									</article>
-									
-								</div>
+							<h3>Graph Reachability</h3>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
 								
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/FoodDietApp01.PNG" alt="" /></a>
-										<header>
-											<h3>Diet Tracking App</h3>
-										</header>
-									</article>
-									
-								</div>
-
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/HeightMap01.PNG" alt="" /></a>
-										<header>
-											<h3>Height Map Generator</h3>
-										</header>
-									</article>
-									
-								</div>
-
+								 <!-- <div class="text">Text Caption</div> -->
+								<img src="images/GraphReachability01.PNG" style="width:75%">
+								<div class="numbertext">1 / 4</div>
 								
+						  	</div>
+
+							<div class="mySlides fade">
+								
+								<img src="images/GraphReachability02.PNG" style="width:75%">
+								<div class="numbertext">2 / 4</div>
+								
+						  	</div>
+
+							<div class="mySlides fade">
+								
+								<img src="images/GraphReachability03.PNG" style="width:75%">
+								<div class="numbertext">3 / 4</div>
+								
+						  	</div>
+
+							<div class="mySlides fade">
+								
+								<img src="images/GraphReachability04.PNG" style="width:75%">
+								<div class="numbertext">4 / 4</div>
+								
+							
+						  	</div>
+						</div>
+							<!-- The dots/circles -->
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1)"></span>
+								<span class="dot" onclick="currentSlide(2)"></span>
+								<span class="dot" onclick="currentSlide(3)"></span>
+								<span class="dot" onclick="currentSlide(4)"></span>
+							</div>
+						
+						<script type="text/javascript">
+								let slideIndex = 1;
+								showSlides(slideIndex);
+
+								// Next/previous controls
+								function plusSlides(n) {
+								showSlides(slideIndex += n);
+								}
+
+								// Thumbnail image controls
+								function currentSlide(n) {
+								showSlides(slideIndex = n);
+								}
+
+								function showSlides(n) {
+								let i;
+								let slides = document.getElementsByClassName("mySlides");
+								let dots = document.getElementsByClassName("dot");
+								if (n > slides.length) {slideIndex = 1}
+								if (n < 1) {slideIndex = slides.length}
+								for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";
+								}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex-1].style.display = "block";
+								dots[slideIndex-1].className += " active";
+								}
+								
+						</script>
+						<br>
+
+						<h3>Diet Tracking App</h3>
+						<div class="slideshow-container">
+							<div class="mySlides2 fade">
+								
+								<!-- <div class="text">Text Caption</div> -->
+								<img src="images/DietTrackingApp01.PNG" style="width:75%">
+								<div class="numbertext">1 / 3</div>
 								
 							</div>
+
+							<div class="mySlides2 fade">
+								
+								<img src="images/DietTrackingApp02.PNG" style="width:75%">
+								<div class="numbertext">2 / 3</div>
+								
+							</div>
+
+							<div class="mySlides2 fade">
+								
+								<img src="images/DietTrackingApp03.PNG" style="width:75%">
+								<div class="numbertext">3 / 3</div>
+								
+							</div>
+
 						</div>
+							<!-- The dots/circles -->
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide2(1)"></span>
+								<span class="dot" onclick="currentSlide2(2)"></span>
+								<span class="dot" onclick="currentSlide2(3)"></span>
+							</div>
+
+						<script type="text/javascript">
+								let slideIndex2 = 1;
+								showSlides2(slideIndex2);
+
+								// Next/previous controls
+								function plusSlides(n) {
+								showSlides2(slideIndex2 += n);
+								}
+
+								// Thumbnail image controls
+								function currentSlide2(n) {
+								showSlides2(slideIndex2 = n);
+								}
+
+								function showSlides2(n) {
+								let i;
+								let slides = document.getElementsByClassName("mySlides2");
+								let dots = document.getElementsByClassName("dot");
+								if (n > slides.length) {slideIndex2 = 1}
+								if (n < 1) {slideIndex2 = slides.length}
+								for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";
+								}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex2-1].style.display = "block";
+								dots[slideIndex2-1].className += " active";
+								}
+								
+						</script>
+						<br>
+
+						<h3>Height Map Generator</h3>
+						<div class="slideshow-container">
+							<div class="mySlides3 fade">
+								
+								<!-- <div class="text">Text Caption</div> -->
+								<img src="images/HeightMapGen01.PNG" style="width:75%">
+								<div class="numbertext">1 / 5</div>
+								
+							</div>
+
+							<div class="mySlides3 fade">
+								
+								<img src="images/HeightMapGen02.png" style="width:75%">
+								<div class="numbertext">2 / 5</div>
+								
+							</div>
+
+							<div class="mySlides3 fade">
+								
+								<img src="images/HeightMapGen03.png" style="width:75%">
+								<div class="numbertext">3 / 5</div>
+								
+							</div>
+
+							<div class="mySlides3 fade">
+								
+								<img src="images/HeightMapGen04.png" style="width:75%">
+								<div class="numbertext">4 / 5</div>
+								
+							</div>
+
+							<div class="mySlides3 fade">
+								
+								<img src="images/HeightMapGen05.png" style="width:75%">
+								<div class="numbertext">5 / 5</div>
+								
+							</div>
+
+						</div>
+							<!-- The dots/circles -->
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide3(1)"></span>
+								<span class="dot" onclick="currentSlide3(2)"></span>
+								<span class="dot" onclick="currentSlide3(3)"></span>
+								<span class="dot" onclick="currentSlide3(4)"></span>
+								<span class="dot" onclick="currentSlide3(5)"></span>
+							</div>
+
+						<script type="text/javascript">
+								let slideIndex3 = 1;
+								showSlides3(slideIndex3);
+
+								// Next/previous controls
+								function plusSlides(n) {
+								showSlides3(slideIndex3 += n);
+								}
+
+								// Thumbnail image controls
+								function currentSlide3(n) {
+								showSlides3(slideIndex3 = n);
+								}
+
+								function showSlides3(n) {
+								let i;
+								let slides = document.getElementsByClassName("mySlides3");
+								let dots = document.getElementsByClassName("dot");
+								if (n > slides.length) {slideIndex3 = 1}
+								if (n < 1) {slideIndex3 = slides.length}
+								for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";
+								}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex3-1].style.display = "block";
+								dots[slideIndex3-1].className += " active";
+								}
+								
+						</script>
+
+		
+								
+							
+		
+							
+					<!-- </div> -->	
 					</section>
 				<!-- 3D Modeling -->
 					<section id="3DModeling" class="three">
