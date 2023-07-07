@@ -12,6 +12,17 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/imageNavigation.css">
 		<link rel="stylesheet" href="assets/css/slideShow.css">
+
+		<style>
+			.outlined-box {
+				border: 2px solid #222629; /* Set border properties */
+				padding: 5px; /* Add padding for spacing */
+				width: 75%; /* Set desired width */
+				margin: 0 auto; /* Center the box horizontally */
+				font-size: 16px
+			}
+		  </style>
+
 	</head>
 	<body class="is-preload">
 
@@ -149,6 +160,95 @@
 							<header>
 								<h2>Software Applications</h2>
 							</header>
+<!--==========================================================================================-->
+							<h3>Automated Thought-to-Text Conversion</h3>
+							<div class="slideshow-container">
+								<div class="mySlides0 fade">
+									
+									 <!-- <div class="text">Text Caption</div> -->
+									<img src="images/eeg_recording example.PNG" style="width:75%">
+									<div class="numbertext">1 / 4</div>
+									
+								  </div>
+	
+								<div class="mySlides0 fade">
+									
+									<img src="images\STModel.png" style="width:75%">
+									<div class="numbertext">2 / 4</div>
+									
+								  </div>
+	
+								<div class="mySlides0 fade">
+									
+									<img src="images/a-Emotiv-EPOC-headset-b-Spatial-mapping-of-the-electrodes-on-the-scalp.png" style="width:75%">
+									<div class="numbertext">3 / 4</div>
+									
+								  </div>
+	
+								<div class="mySlides0 fade">
+									
+									<img src="images/SVM_conmaxtrix.png" style="width:75%">
+									<div class="numbertext">4 / 4</div>
+									
+								
+								  </div>
+
+								
+							</div>
+								<!-- The dots/circles -->
+								<div style="text-align:center">
+									<span class="dot4" onclick="currentSlide0(1)"></span>
+									<span class="dot4" onclick="currentSlide0(2)"></span>
+									<span class="dot4" onclick="currentSlide0(3)"></span>
+									<span class="dot4" onclick="currentSlide0(4)"></span>
+								</div>
+
+								<div class="outlined-box">
+								
+									<p>This research focuses on assisting paralyzed people with limited ability to communicate
+										through the use of an external BCI that translates thought into text. This research will record
+										electroencephalogram (EEG) data or brainwave signals from a subject’s brain and annotate automatically
+										using our developed annotation User Interface (AUI) while they think of writing a letter while wearing the
+										external EEG headset. A machine learning algorithm will be developed to decode human thoughts
+										(brainwaves) to text. The algorithm will predict and output the letter the subject was thinking of and display it
+										as text in our AUI. 
+										</p>
+									
+								  </div>
+							
+							<script type="text/javascript">
+									let slideIndex0 = 1;
+									showSlides0(slideIndex0);
+	
+									// Next/previous controls
+									function plusSlides(n) {
+									showSlides0(slideIndex0 += n);
+									}
+	
+									// Thumbnail image controls
+									function currentSlide0(n) {
+									showSlides0(slideIndex0 = n);
+									}
+	
+									function showSlides0(n) {
+									let i;
+									let slides = document.getElementsByClassName("mySlides0");
+									let dots = document.getElementsByClassName("dot4");
+									if (n > slides.length) {slideIndex0 = 1}
+									if (n < 1) {slideIndex0 = slides.length}
+									for (i = 0; i < slides.length; i++) {
+										slides[i].style.display = "none";
+									}
+									for (i = 0; i < dots.length; i++) {
+										dots[i].className = dots[i].className.replace(" active", "");
+									}
+									slides[slideIndex0-1].style.display = "block";
+									dots[slideIndex0-1].className += " active";
+									}
+									
+							</script>
+							<br>
+<!--==========================================================================================-->
 							<h3>Graph Reachability</h3>
 						<div class="slideshow-container">
 							<div class="mySlides fade">
@@ -188,6 +288,13 @@
 								<span class="dot" onclick="currentSlide(3)"></span>
 								<span class="dot" onclick="currentSlide(4)"></span>
 							</div>
+
+							<div class="outlined-box">
+								
+								<p>The idea behind the app is to use a GUI to visually show a graph’s reachability. The app allows the user to see
+									the total possible paths, cycles, circuits, loops, and the out and in degrees based on the user’s entered graph.</p>
+								
+							  </div>
 						
 						<script type="text/javascript">
 								let slideIndex = 1;
@@ -221,7 +328,7 @@
 								
 						</script>
 						<br>
-
+<!--==========================================================================================-->
 						<h3>Diet Tracking App</h3>
 						<div class="slideshow-container">
 							<div class="mySlides2 fade">
@@ -249,10 +356,20 @@
 						</div>
 							<!-- The dots/circles -->
 							<div style="text-align:center">
-								<span class="dot" onclick="currentSlide2(1)"></span>
-								<span class="dot" onclick="currentSlide2(2)"></span>
-								<span class="dot" onclick="currentSlide2(3)"></span>
+								<span class="dot2" onclick="currentSlide2(1)"></span>
+								<span class="dot2" onclick="currentSlide2(2)"></span>
+								<span class="dot2" onclick="currentSlide2(3)"></span>
 							</div>
+
+							<div class="outlined-box">
+								
+								<p>The purpose behind the app is to give an outlet to anyone trying to be health conscious about their diet the
+									ability to track and monitor their nutritional intake. The app allowed for any user to search and record the
+									nutritional facts about foods they consumed, keep a catalog of their dietary health, and monitor their
+									nutritional status. 
+									</p>
+								
+							  </div>
 
 						<script type="text/javascript">
 								let slideIndex2 = 1;
@@ -271,7 +388,7 @@
 								function showSlides2(n) {
 								let i;
 								let slides = document.getElementsByClassName("mySlides2");
-								let dots = document.getElementsByClassName("dot");
+								let dots = document.getElementsByClassName("dot2");
 								if (n > slides.length) {slideIndex2 = 1}
 								if (n < 1) {slideIndex2 = slides.length}
 								for (i = 0; i < slides.length; i++) {
@@ -286,7 +403,7 @@
 								
 						</script>
 						<br>
-
+<!--==========================================================================================-->
 						<h3>Height Map Generator</h3>
 						<div class="slideshow-container">
 							<div class="mySlides3 fade">
@@ -328,12 +445,20 @@
 						</div>
 							<!-- The dots/circles -->
 							<div style="text-align:center">
-								<span class="dot" onclick="currentSlide3(1)"></span>
-								<span class="dot" onclick="currentSlide3(2)"></span>
-								<span class="dot" onclick="currentSlide3(3)"></span>
-								<span class="dot" onclick="currentSlide3(4)"></span>
-								<span class="dot" onclick="currentSlide3(5)"></span>
+								<span class="dot3" onclick="currentSlide3(1)"></span>
+								<span class="dot3" onclick="currentSlide3(2)"></span>
+								<span class="dot3" onclick="currentSlide3(3)"></span>
+								<span class="dot3" onclick="currentSlide3(4)"></span>
+								<span class="dot3" onclick="currentSlide3(5)"></span>
 							</div>
+
+							<div class="outlined-box">
+								
+								<p>The purpose of the app is to procedural generate a height map/texture map to be used for height data for
+								instance in texture painting, texture masking, landscape generation, etc. The application generates a grayscale
+								image implementing a Perlin noise algorithm which can be scaled and adjusted to create your desired map.</p>
+								
+							  </div>
 
 						<script type="text/javascript">
 								let slideIndex3 = 1;
@@ -352,7 +477,7 @@
 								function showSlides3(n) {
 								let i;
 								let slides = document.getElementsByClassName("mySlides3");
-								let dots = document.getElementsByClassName("dot");
+								let dots = document.getElementsByClassName("dot3");
 								if (n > slides.length) {slideIndex3 = 1}
 								if (n < 1) {slideIndex3 = slides.length}
 								for (i = 0; i < slides.length; i++) {
@@ -366,7 +491,7 @@
 								}
 								
 						</script>
-
+<!--==========================================================================================-->
 		
 								
 							
@@ -388,41 +513,61 @@
 											<article class="item">
 												<a href="#" class="image fit"><img src="images/ModernExteriorFinalRenderLightpng.png" alt="" /></a>
 												<header>
-													<h3>Ipsum Feugiat</h3>
+													<h3>Modern House Exterior</h3>
 												</header>
 											</article>
 											<article class="item">
 												<a href="#" class="image fit"><img src="images/StudioReception.png" alt="" /></a>
 												<header>
-													<h3>Rhoncus Semper</h3>
+													<h3>Reception Desk</h3>
+												</header>
+											</article>
+											<article class="item">
+												<a href="#" class="image fit"><img src="images/CarNightScene03.PNG" alt="" /></a>
+												<header>
+													<h3>Car City Video 3</h3>
 												</header>
 											</article>
 										</div>
 										<div class="col-4 col-12-mobile">
 											<article class="item">
-												<a href="#" class="image fit"><img src="images/Temp0240.png" alt="" /></a>
+												<a href="#" class="image fit"><img src="images/CarNightScene.PNG" alt="" /></a>
 												<header>
-													<h3>Magna Nullam</h3>
+													<h3>Car City Video 1</h3>
+												</header>
+											</article>
+											<article class="item">
+												<a href="#" class="image fit"><img src="images/OvergrownBalcony04.png" alt="" /></a>
+												<header>
+													<h3>Overgrown Balcony</h3>
 												</header>
 											</article>
 											<article class="item">
 												<a href="#" class="image fit"><img src="images/ContentStudioTopView02.png" alt="" /></a>
 												<header>
-													<h3>Natoque Vitae</h3>
+													<h3>Content Creation Studio</h3>
 												</header>
 											</article>
+										
 										</div>
 										<div class="col-4 col-12-mobile">
 											<article class="item">
 												<a href="#" class="image fit"><img src="images/BackYardPatio02.png" alt="" /></a>
 												<header>
-													<h3>Dolor Penatibus</h3>
+													<h3>Backyard Patio</h3>
 												</header>
 											</article>
+											
 											<article class="item">
 												<a href="#" class="image fit"><img src="images/Studio500SamplesRender.png" alt="" /></a>
 												<header>
-													<h3>Orci Convallis</h3>
+													<h3>Studio</h3>
+												</header>
+											</article>
+											<article class="item">
+												<a href="#" class="image fit"><img src="images/Temp0240.png" alt="" /></a>
+												<header>
+													<h3>Car City Video 2</h3>
 												</header>
 											</article>
 										</div>
